@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" type="image/icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEXz8/PzUyWBvAYFpvD/ugjz9fb19Pbz+fr39fr69vPy9foAofD/tgDzRQB9ugAAo/Df6dCv0Xjz2dPzTBfzl4PznImz04CAx/H60oHS5vJ5xPH60Hn16dIAnvDz7u3z4t7n7dzzNADzkXurz3BwtQDzvrLM36zf6/Os2PL336z07d/7z3RN8WfWAAABg0lEQVR4nO3cyVLCYBCFURwCkXlygDBFUBTf//3cSGIVf5WrDi7O9wJdp3p/Wy1JkvSrLLzqVDu8FHAzjW57JrZ34+hSH5yWg9jK187PrXx/GMZ2GF9+MZsObmKbzSvhZHgb25CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCwUWE5i21QC/fB86Xp/dLt/DG4t/MGbf7+FNxkl9jZzTrR1TvCeXjJIWFJkv7uIbzqVDe8LAE8Lp+D+zgTu5/FS2zFKUFcrEex9ZaV8Ksf3Sol7N3FNqqFRf8+NkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQsJmhetebOtr75dmi+iO1anTKrrNJbDRsvCuDJQk6Z/1DSzvYqEfRCNJAAAAAElFTkSuQmCC" />
+    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <nav
+      class="navbar flex justify-between items-center p-3 md:mr-9 md:ml-9 bg-white"
+    >
+      <div class="flex justify-center align-middle md:order-2">
+        <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        </div>
+        <div class="search align-middle mt-4 md:hidden">
+          <img class="w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABD0lEQVRIie2UPW7CQBCFP5IS0gEnoQdyAxAHSQoUUSD+Gm4DIiegoITkAOEMJIQWTDFvwY3xrqFAUZ402rX95r2xvTPwV1EGRsAHsFOsgCFQula8BWyBKCF+gOY14gcJTYAqkFfUgKme7YFGqHg5Vnn7Au9NnG+gGGIw4lx5GmbiDkIMPpVU9eDWxV2FGPwqqeDBfRJ3m0Z8iO2jgGJyvsS4wVprxSPPcb5CDN61vngYvGqdeXBPKGFNFGFHMQkdcTZk6Oom1kSRqqtjP70APGNv6Tq6Gyru0MCaKGlUbCTurvtZTIpYEy2x47vTfsD5s8RNM5mkwY0MF+N/k7sy6bmbjzc0WGAzak7gGL9vHAG+Ol6n6x8u5AAAAABJRU5ErkJggg==" alt="" />
+        </div>
+      </div>
+      <div class="logo items-center flex md:order-1 cursor-pointer">
+        <img class="w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEXz8/PzUyWBvAYFpvD/ugjz9fb19Pbz+fr39fr69vPy9foAofD/tgDzRQB9ugAAo/Df6dCv0Xjz2dPzTBfzl4PznImz04CAx/H60oHS5vJ5xPH60Hn16dIAnvDz7u3z4t7n7dzzNADzkXurz3BwtQDzvrLM36zf6/Os2PL336z07d/7z3RN8WfWAAABg0lEQVR4nO3cyVLCYBCFURwCkXlygDBFUBTf//3cSGIVf5WrDi7O9wJdp3p/Wy1JkvSrLLzqVDu8FHAzjW57JrZ34+hSH5yWg9jK187PrXx/GMZ2GF9+MZsObmKbzSvhZHgb25CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCwUWE5i21QC/fB86Xp/dLt/DG4t/MGbf7+FNxkl9jZzTrR1TvCeXjJIWFJkv7uIbzqVDe8LAE8Lp+D+zgTu5/FS2zFKUFcrEex9ZaV8Ksf3Sol7N3FNqqFRf8+NkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQsJmhetebOtr75dmi+iO1anTKrrNJbDRsvCuDJQk6Z/1DSzvYqEfRCNJAAAAAElFTkSuQmCC" alt="" />
+        <span class="font-medium text-base">Microsoft</span>
+        <div class="features md:flex md:space-x-4 md:mx-8 sm:hidden text-xs">
+          <div class="fitem hover:underline cursor-pointer">Microsoft 365</div>
+          <div class="fitem hover:underline cursor-pointer">Office</div>
+          <div class="fitem hover:underline cursor-pointer">Windows</div>
+          <div class="fitem hover:underline cursor-pointer">Surface</div>
+          <div class="fitem hover:underline cursor-pointer">Xbox</div>
+          <div class="fitem hover:underline cursor-pointer">Support</div>
+        </div>
+      </div>
+      <div
+        class="md:order-3 flex justify-center items-center space-x-5 align-middle"
+      >
+        <div class="search align-middle md:block hidden">
+          <img class="w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABD0lEQVRIie2UPW7CQBCFP5IS0gEnoQdyAxAHSQoUUSD+Gm4DIiegoITkAOEMJIQWTDFvwY3xrqFAUZ402rX95r2xvTPwV1EGRsAHsFOsgCFQula8BWyBKCF+gOY14gcJTYAqkFfUgKme7YFGqHg5Vnn7Au9NnG+gGGIw4lx5GmbiDkIMPpVU9eDWxV2FGPwqqeDBfRJ3m0Z8iO2jgGJyvsS4wVprxSPPcb5CDN61vngYvGqdeXBPKGFNFGFHMQkdcTZk6Oom1kSRqqtjP70APGNv6Tq6Gyru0MCaKGlUbCTurvtZTIpYEy2x47vTfsD5s8RNM5mkwY0MF+N/k7sy6bmbjzc0WGAzak7gGL9vHAG+Ol6n6x8u5AAAAABJRU5ErkJggg==" alt="" />
+        </div>
+        <div class="cart">
+          <img class="w-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAACeklEQVR4nO2bv08UQRTHP/yIUBgrMAhY+y9oRW3oDHagpQ3U1uj/dNbagCZqa6OFaAGxEA4TrwAs9l6yM3e37t2+2fm1n2SS3bvZt2++O2++m8scdHQI28AP4GZCuwSOgQNgyVOOTjlh8uDt9hnY8JOmO6YRQESIfiYslI6/AFvAnZrXrgGnwAftpEJlE+hhzoIjrxl54D6mABd+02nO3AzX3CjECIZ53wn4phPAdwK+0RBgmneHENpP4Kkkr7EIxshvYAW4yrUElhk+yFwFeAdcg44AcxG0T1bOb5oM2F5UQmeN4mmXc37QJGBsAjzHzPdb+csc1oDH1nmvfLKocIMYZkEZo/5zew8YUPj/pXyQQwmUeUtp8JCfAI3sT4jFBVaBKxTtT4hFgGdU2J+QcglU2l8TYpgBC8AvzDy3tYLHIMAjzBz/ArfHdUy1BOzpP2J/Qi4CqNifEHoJOLM/IXQB9qhhf0KKJeDM/oSQZ8A8cIYj+xNCFuAhNe1PSK0EatufkLoAqvYnhFoCKzi2PyFUAXaZwv6ElH8TrGV/qa0BZWrVf6o/ivaBe8Cf/3VMcQacAi+oMXjQWQO6PUIxM4sA9pvVpkYiMfEe0297ZCbCAf73+VS1E0ZfiVVZotgo7XugVe27s9EP2SB8EZxzC9in2DDdb3lwagK48HD75pPu4aufQfce4DsB37gQoG+dr4/pY//fqOp/B9rxDFwI8NU63xvTx/7MvsZlPOe8xlyNB8BLiie3PjweWH0OW4znnLsUU7CuXcnG5bbitcIOo7szx7Vr4ImHeK2wA5xT/aSmSVY7XiusAq+AjxSreX94fMhs01Q7Xkf2/AM00OqzSIPKsAAAAABJRU5ErkJggg==" alt="" />
+        </div>
+        <div class="account">
+          <img class="w-8 h-8" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAFTklEQVRoge2aTWxUVRTHf9MWOq0onVrLh3yplRQoVA0xMUFZGa2mQY2JEcSYmMhOKC7cqTvDwhi1anShCzUS3YgYv9JgiyZogVpMFKxVo6JRwcbPtrRMn4tzbu7r9M179755bVjwTyZvMu9/zj3369xzzxk4j3MLuQx1NQA3AJuANUAL0AQs0Pf/AqeAYeAE8DFwEPgrQxtSoxbYBrwPnAUCz89Z4D1gq+qac+SB3cDPIaPGgV7gUeB2YB1wsXLz+r0NuEM5fcCZkPxJYJdy5wQdyPIwBhwFdgCFFLoKKjsQ0vcNcFMmlpZBHngu1OAAcHNGunPIAA2G9D/DLCy3RcARbWAU2AlUZ90IUAN0AWPaVj/QnJXyVch0B4i3WZ/AvxJ4BOgBfkH2zn/AceApYKVDm+3AkLY5pDZUhEXYTnyKbNhyKAAvA0XiPdXfwHbgooS2m4DPsJ1JPTN57HI6hD0PorAEGXFj6EvImm8F6vXTBjyOddNjyAzVx+hdEOpMPyn3zPPY5RQ3EznE7RoPtiJB733IuTOhMp8kGNiEXWbdLoaHcQt2YyftiS3KPUV8h0vRhpwdAfBwAvcqrANwds11wLcq9KAD/zXl7nZtIIROlf3BgduF3S9OS+wh7Dnh4mL/UP4VLspLkENmMgCWJnBrgGPK3ZmkOI8NO1ym8ALsBk+LA6rjRgeuWfInSZiVe5R4xNGI5cr/yZEfhf2qo9OBm8OGM3eHX1SVEO/V5wuORpwJNZAWZmQnHbgB8KJ+316OVEB8/Dhyt3BBNXIATpC+M+b82eDIb0QGcBJYGEW4TRUe8DTkR5W71FMOZI9NqGF1HnJ9lCzH8NLapM9eT2MG9LnRUw7gOmAecpCOech9pM/rzQ/hjrTq85inMV/q81pPOYDN+jzsKWdsNDZP68hqfQ55KKwC7tLvo57GgOwvgFuZ6XjiYGxcHfXyNLLufMKMpSoz4iFTihHVscRDpgkbFs2AuT/P91A4H5mJIu6eLoyCyo4ie8UVtdg8AeA3nVGYQDxIFfAqfht+I/CKyvbido44wSytRk+5q4HfVHaPh9welflVdfggdmmZmL816mUCrlHZQQ8ZEwD6dgJgLfauNAPv6MstKRRXIfFWgNwMk9CBDd/TRATm8N4fNsDA9K49heIp4An9/izxG79BOQBPqkG+MDYej3qZNkQxmIe9X0dOueIE9g7u46nCMFfryIg5TdBYChPWF2M4JsuyPGUbiUEjwIfayAMpG6lX+akYzpRy4rIncdih8u/GkczFaiCOFIOF2FRPOYwrp+xoxiB8sdoaR8wj2cGAdHndFpU9HcMx51VLCv3OV12wyYdB5MLvimVINjIA3orh7cMm/ZZ56K8BvsAx+QDT00G7HPjrkcTZqMp8R/xGXqEckzfrxu126J0OAjuFY2UaaUZG5TA2p1sE9uIW4jQCrzM9T/y5Grs4gt9OigSdgUmZfo3ENiAZv72I6zMGjCCjus63AZV5GpsbM+W4N5GwB23bJNK9U6YwM4ndjR3BSeBt4E6yKcbUIiW5fdhBKiKFpUNUmMQGuASZkfDyeYMyN7OMsBJJR4VnfRgpcVSEy7Gb/3vc0zaVYAPWIQwDl2WleDGS6QiQ6lMXs1N6q0aS4cYD9pPBTJQij3UA5vTPsvragXguo7+bWa69R5Wn7yddoNmgsqXl6ayqxYmoQ5aACWcC5P7eAzyGhNdrkIi6Sj8F5GbXqZwebNUqQKoAc/qHgTDySKD5AZX9hWMbFS6jrP9UsxlJva5FCj/NwIX6/h/gd8QDfoXUDvuAPzO04TzOGfwPqd6qPM+f/hwAAAAASUVORK5CYII=" alt="" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="slider flex flex-col-reverse md:flex-row bg-[#f2f2f2] mx-6 py-14"
+      >
+        <div
+          class="left flex flex-col justify-center items-center md:items-baseline md:mx-8 sm:mx-10"
+        >
+          <h1 class="md:text-3xl font-medium sm:text-2xl">Microsoft 365</h1>
+          <p class="mt-2 w-3/4 md:text-left sm:text-center">
+            Premium Office apps, extra cloud storage, advanced security, and
+            more – all in one convenient subscription.
+          </p>
+          <button class="text-white bg-blue-700 my-4 p-2 font-semibold">
+            For up to 6 people
+          </button>
+        </div>
+        <div class="right flex items-center">
+          <img src="1st image.jpg"" />
+        </div>
+      </div>
+    </main>
+    <div class="promo space-y-6 flex flex-col md:flex-row m-2 items-center">
+      <div class="item flex items-center mx-4 mt-6 space-x-2">
+        <img class="w-10 h-10 ml-16" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xABrAAEBAQEAAAAAAAAAAAAAAAAHBQQIEAAAAwUEBwgDAQAAAAAAAAAAAQUCBBESEwYUFVEWGDZVdJOxISgxSGaGo8MnRmKRAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlW0y6ss2hUGWVR7IieG4FVPMBOx5a3q+c0wDriqlqV3q/vNfSeWpUOaEnhHIAFY8tb1fOaYCjZldWWrQp7LSo9mRvDESqnmAnWp2jUeIb6gJoB78kPun6wAIApWW2jTuIY6gHZc1X8YfL1ptXrNVJZITR7YAMXdY9c/GAVvwVqyftGimO/wAXm8Sf5LAAU91j1z8YDah6r+MOl102r1mac0kJo9kQATanaNR4hvqAmgHvyQ+6frAAgClZbaNO4hjqAo2mQllq0Kg0ylvZkbw3A6R5gJ2ArW6nzlGAdcKUtSu63B5r6TzU6ZzQk8YZAArAVrdT5yjAUbMoSyzaFPaaS3siJ4YidI8wH//Z" alt="" />
+        <p class="text-blue-800 underline cursor-pointer">
+          Choose your Micrsoft 365
+        </p>
+      </div>
+      <div class="item flex items-center mx-4 mt-6 space-x-2">
+        <img class="w-10 h-10 ml-14" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xAB0AAABBAMBAAAAAAAAAAAAAAABAwQGBwIFCAAQAAAFAwEECAENAAAAAAAAAAECAwQFAAYRBxITITEIFBVBUWGBkSIWGCQ0NUJiY3GCobHBAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDssRAOdBiJyBzOX3oAKyQc1SB+4KBBaRYIhlV4gQPxHAKAsJBi/A4snaDgCDg27OBsD54oKs1qcyU5fdpaexMu/jCyBlnkisyV3apW6QFDAG7sib+KBYNDYE4fS7pvJ147yXNx9goCGgOnxhy4TmHQ/nSShv8AaBYmgelJeJ7WRWHxVUMf+xoI90f7ehmGpt/PrcYpR8Q2cIxqCKPAhjpAYVDY8cnAPSg2VgF+UfSBvK5R+JvDoIw7U3dtBtGVx67IUFvUHqDWXXKoQVtSMw5HCLNsdY4+RQzQUr0P5132E/t+fblbTDlTtpMc/WUHHED/AKgJcD6UDHSa4rw0+t92wuDTC5nck6frPHjpkkVVNQ5x+6OciGACgl4a6MEftCxL3aY5iaKEQD2GgHziNPEuD3ttiPf1iNOXFBBte9a7LuzTR1bNoSysjKSyqbTq6CBt7uzD8YgXv4cMedAned9W/HvbUnbYhrhby0GYrQzVWLUILlobAHTzyyGyAhQdNUAEhR5lAfSgwMgiYMGSTEPMoUDYImMByVyDBsCxeJVN2G0HrQOxTTHmQvtQf//Z" alt="" />
+        <p class="text-blue-800 underline cursor-pointer">
+          Explore Surface Devices
+        </p>
+      </div>
+      <div class="item flex items-center mx-4 mt-6 space-x-2">
+        <img class="w-10 h-10 ml-11" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xABxAAEAAwEAAAAAAAAAAAAAAAAIBQYHCRAAAQMCAwUEBwgDAAAAAAAAAQIDBAUGAAcRCBIhIjETFEFRFhcjMkJhgRUlUmJxgrHRGDORAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwBXXxd9u2VRVVi5qozT4QUEdo4eqj0AHUnAUS9qbW807aE7LzNAUuC6n2a4TIWFnyUsKBGANvqJ2jPTPuPpVJ7t7/2n39fZ6a+XXX5YBJWTTa1lZbZnZh5oCqQWke0XOZCNw+SVlRJwF7se77dvWiprFs1NmoQioo7Rs9FDqCPA4AC7cOYUq6s15NvMSFGlUMlhDYPKp341fwPpgJ3YDh35Iv16RR5jke2mE/eSXAVNOE+6lI/H14+GAfOo101GvlgANt+Q78j36zIrExyRbL6fu1LYKWmiPeSofj6cfHAQWw9mFKtXNeNbz8hQpVcIYW2Typd+BX8j64DOb1otVuLO6rUSIyt6ozaw4yhHiVFemAdb1TtDZmySiQ3yh2aG+RlBAcmyCBvH5Dpx8BpgBx/kRmP6zvTf7WXv7273HU937LX/AF7vl8+uAY7FTs/aZySlw2ShqYW+dlRBchSAOU/MdePiNcAFLLotVt3O6k0OWypmowqw2ytHiFBemAZCMs4Nm7TlezLqbG7Qm6a5UmnSnlbf+P6gcf3YAc56ZkVXM2/JddnuLTFCi3Cjk8rLQPAfr5nAULAX3IvMiq5ZX5ErsBxaopUG5sfXleaJ4j9fI4BjOZZwby2nKDmXTGN6hOU1upOuhPK498H1I4/twG/XlQIV02vUreqO+ItQjqYdKDooJUNOBwHP/NnZWzBtWc/It6Kq4qVqS2uOPbJH5kf1rgMn9XV9947v6JVjtddN3uqtdf8AmA1jKbZWzBuqcxIuGKq3aVqC4uQPbKH5Uf3pgOgFm0CFa1r023qdvmLT46WGis6qKUjTicB//9k=" alt="" />
+        <p class="text-blue-800 underline cursor-pointer">Buy Xbox games</p>
+      </div>
+      <div class="item flex items-center mx-4 mt-6 space-x-2">
+        <img class="w-10 h-10 ml-10" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wCEAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx4BBQUFBwYHDggIDh4UERQeHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHv/AABEIACgAKAMBEQACEQEDEQH/xABrAAEBAQEAAAAAAAAAAAAAAAAHBQQIEAAAAwUEBwgDAQAAAAAAAAAAAQUCBBESEwYUFVEWGDZVdJOxISgxSGaGo8MnRmKRAQEAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDlW0y6ss2hUGWVR7IieG4FVPMBOx5a3q+c0wDriqlqV3q/vNfSeWpUOaEnhHIAFY8tb1fOaYCjZldWWrQp7LSo9mRvDESqnmAnWp2jUeIb6gJoB78kPun6wAIApWW2jTuIY6gHZc1X8YfL1ptXrNVJZITR7YAMXdY9c/GAVvwVqyftGimO/wAXm8Sf5LAAU91j1z8YDah6r+MOl102r1mac0kJo9kQATanaNR4hvqAmgHvyQ+6frAAgClZbaNO4hjqAo2mQllq0Kg0ylvZkbw3A6R5gJ2ArW6nzlGAdcKUtSu63B5r6TzU6ZzQk8YZAArAVrdT5yjAUbMoSyzaFPaaS3siJ4YidI8wH//Z" alt="" />
+        <p class="text-blue-800 underline cursor-pointer">Get Windows 11</p>
+      </div>
+    </div>
+  </body>
+</html>
